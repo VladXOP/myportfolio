@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background:  url('background.jpg') ;
+  background-size: cover;
+  background-attachment: fixed; /* Фон не рухається при прокручуванні */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.portfolio {
+  margin: 10px 20px 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5); /* Прозорість 50% */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header p {
+   font-size: 34px;
+}
+.header p1 {
+   font-size: 34px;
+}
+
+@media (max-width: 360px) {
+  .header p {
+    display: none
+  }
+}
+@media (max-width: 860px) {
+  .header p1{
+    display: none
+  }
+}
+.portfolio h1 {
+  margin-top: 20px; /* Відступ зверху */
+  margin-bottom: 20px; /* Відступ знизу */
+  text-align: center; /* Центрування тексту */
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє проектам переноситись на новий рядок */
+  gap: 20px; /* Відстань між проектами */
+  
+
+}
+
+.project {
+  text-align: center;
+  width: calc(33.33% - 20px); /* Три елементи в ряд */
+  margin-bottom: 20px;
+  border: 2px solid #B3D0F5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8); /* Прозорість 20% */
+}
+@media (max-width: 600px) {
+  .project {
+   width: 100%; /* Кожен проект займає весь рядок при ширині екрану 250px */
+  }
+
+}
+.project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 10px;
+
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.project-info p {
+  margin: 10px 0;
+}
+
+.project-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.add-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 120px;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  font-size: 44px;
+  font-weight: bold;
+  color: #007bff;
+  transition: background-color 0.3s ease;
+
+}
+
+.add-project:hover {
+  background-color: #f0f0f0;
+}
+
+.header-content {
+ display: flex; /* Використання flexbox */
+ align-items: center; /* Вирівнювання по вертикалі */
+ gap: 10px; /* Відступ між фото і текстом */
+ padding: 10px;
+ border: 1px solid #ddd;
+ border-radius: 10px;
+ background-color: #f9f9f9;
+ }
+
+.avatar {
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+ object-fit: cover;
+ }
