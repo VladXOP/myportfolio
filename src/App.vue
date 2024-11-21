@@ -5,11 +5,11 @@
       <div class="header-content">
         <h1>Портфоліо</h1>
         <p>Владислава</p>
-        <p1>, веб-розробника)</p1>
+        <p1>, веб-розробника</p1>
         <img class="avatar" alt="Моє лого" src="./assets/user.jpg">
       </div>
     </header>
-    <h1>111</h1>
+    <h1>Мої реалізовані проєкти:</h1>
     <section class="projects">
       <div class="project" v-for="project in projects" :key="project.id">
         <!-- Перевірка на ID 6 -->
