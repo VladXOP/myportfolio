@@ -9,7 +9,7 @@
         <img class="avatar" alt="Моє лого" src="./assets/user.jpg">
       </div>
     </header>
-    <h1>1</h1>
+    <h1>111</h1>
     <section class="projects">
       <div class="project" v-for="project in projects" :key="project.id">
         <!-- Перевірка на ID 6 -->
