@@ -161,28 +161,31 @@ body {
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
  object-fit: cover;
  }
-@media (max-width: 390px) {
+@media (max-width: 690px) {
     .project {
+
         width: 100%; /* Забезпечує повну ширину екрану для кожного проекту */
     }
      .portfolio {
+
       padding: 10px;
-        width: 70%; /* Забезпечує повну ширину екрану для кожного проекту */
+        width: 89%; /* Забезпечує повну ширину екрану для кожного проекту */
     }
     .portfolio h1 {
         font-size: 20px;
     }
     .header-content {
         flex-direction: column; /* Розташування аватара та тексту вертикально */
-        text-align: center;
+        
     }
     .avatar {
+
         margin-bottom: 10px; /* Відступ між аватаром та текстом */
     }
     .header p {
        font-size: 20px;
     }
     .header h1 {
-       font-size: 20px;
+       font-size: 50px;
     }
 }
