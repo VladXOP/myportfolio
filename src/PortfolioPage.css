@@ -10,14 +10,14 @@ html, body {
 }
 
 body {
-  background:  url('background.jpg') ;
+  background:  url('assets/background.jpg') ;
   background-size: cover;
   background-attachment: fixed; /* Фон не рухається при прокручуванні */
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
-  overflow: auto;
+  min-height: 10vh;
+  overflow-x: hidden;
 }
 
 .portfolio {
@@ -29,6 +29,27 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 390px) {
+    .project {
+        width: 100%; /* Забезпечує повну ширину екрану для кожного проекту */
+    }
+     .portfolio {
+        width: 100%; /* Забезпечує повну ширину екрану для кожного проекту */
+    }
+    .header-content {
+        flex-direction: column; /* Розташування аватара та тексту вертикально */
+        text-align: center;
+    }
+    .avatar {
+        margin-bottom: 10px; /* Відступ між аватаром та текстом */
+    }
+    .header p {
+       font-size: 1px;
+    }
+    .header p1 {
+       font-size: 1px;
+    }
+}
 
 
 .header {
@@ -128,7 +149,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: 120px;
   border: 2px dashed #ccc;
   cursor: pointer;
@@ -136,7 +156,6 @@ body {
   font-weight: bold;
   color: #007bff;
   transition: background-color 0.3s ease;
-
 }
 
 .add-project:hover {

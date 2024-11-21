@@ -6,7 +6,7 @@
         <h1>Портфоліо</h1>
         <p>Владислава</p>
         <p1>, веб-розробника)</p1>
-        <img class="avatar" alt="Моє лого" src="./user.jpg">
+        <img class="avatar" alt="Моє лого" src="./assets/user.jpg">
       </div>
     </header>
     <h1>А це мої роботи</h1>
