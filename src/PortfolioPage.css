@@ -89,7 +89,10 @@ body {
 }
 
 .project {
+   display: flex;
   text-align: center;
+  justify-content: center; /* Вирівнювання по горизонталі */
+  align-items: center;    /* Вирівнювання по вертикалі */
   width: calc(33.33% - 20px); /* Три елементи в ряд */
   margin-bottom: 20px;
   border: 2px solid #B3D0F5;
@@ -149,13 +152,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 80px;
+  width: 80px;
   border: 2px dashed #ccc;
   cursor: pointer;
   font-size: 44px;
   font-weight: bold;
   color: #007bff;
   transition: background-color 0.3s ease;
+  border-radius: 15px;
 }
 
 .add-project:hover {
